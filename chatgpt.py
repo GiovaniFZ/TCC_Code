@@ -34,8 +34,6 @@ data = {
 response = requests.post(url, headers=headers, json=data)
 
 if response.status_code == 200:
-    print("Response from OpenAI:", response.json())
-    print('\n')
     print(response.json()['choices'][0]['message']['content'])
 else:
     print("Error:", response.status_code, response.text)
