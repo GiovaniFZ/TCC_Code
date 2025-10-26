@@ -1,4 +1,4 @@
-# Código para avaliação do Gemini para o TCC.
+# Código para avaliação do Gemini e ChatGPT para o TCC.
 Eu pensei nos Prompts: 
 
 - Fácil (Mais Generalizado): 
