@@ -18,5 +18,6 @@ response = client.models.generate_content(
 end_time = time.time()
 elapsed_time = end_time - start_time
 
-print(response.text)
+print('Response:', response.text)
+print('Tokens used:', response.usage_metadata.total_token_count)
 print(f"Elapsed time: {elapsed_time} seconds")
