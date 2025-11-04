@@ -1,0 +1,7 @@
+1. Como posso utilizar o Gemini por linha de comando utilizando python?
+2. Crie um código em python que leia um arquivo de texto e conte o número de linhas e palavras.
+3. Crie uma função em TypeScript que valide emails e números de telefone utilizando expressões regulares (regex).
+4. Mostre como configurar a conexão com um banco de dados usando Sequelize em JavaScript.
+5. Crie um código em Python que leia um arquivo CSV e envie os dados para uma API via requisição HTTP.
+6. Crie um middleware de autenticação JWT completo em Node.js (gerar token, verificar e renovar).
+7. Crie uma API REST em Node.js com Express que permita cadastrar, listar e deletar produtos, utilizando Sequelize e MySQL.
