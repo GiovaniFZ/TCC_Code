@@ -1,0 +1,9 @@
+Explique o que é o operador spread (...) e o que faz neste código e qual será o conteúdo final das variáveis merged.
+```js
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+
+const merged = [...arr1, ...arr2];
+
+console.log(merged);
+```

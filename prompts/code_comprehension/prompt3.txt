@@ -1,0 +1,6 @@
+O que essa expressão regular verifica e qual seria a saída do código acima?
+```
+import re
+pattern = r'^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$'
+print(bool(re.match(pattern, "teste_test123@dominio.com")))
+```

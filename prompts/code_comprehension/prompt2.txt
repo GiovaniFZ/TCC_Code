@@ -1,0 +1,10 @@
+Explique como funciona esse algoritmo de ordenação e qual será a saída para arr = [5, 3, 8, 4, 2].
+```
+def sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+    return arr
+```

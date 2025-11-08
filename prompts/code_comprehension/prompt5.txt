@@ -1,0 +1,12 @@
+Analise o código abaixo e explique o que ele faz, qual o resultado final e o conceito usado.
+```
+function compose(...fns) {
+  return (x) => fns.reduceRight((acc, fn) => fn(acc), x);
+}
+
+const add = (x) => x + 1;
+const double = (x) => x * 2;
+
+const composed = compose(add, double);
+console.log(composed(5));
+```
