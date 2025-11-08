@@ -1,5 +1,4 @@
 import requests
-import json
 import os
 from dotenv import load_dotenv
 import time
@@ -14,15 +13,11 @@ def save_txt(folder_name, nome_arquivo, conteudo):
     where = os.path.join(folder_name, nome_arquivo)
     with open(where, "w", encoding="utf-8") as arquivo:
         arquivo.write(conteudo)
+        
+def open_txt(name_file):
+    with open(f"{name_file}.txt", "r", encoding="utf-8") as file:
+        return file.read()
 
-
-questions = ["Crie um código em python que leia um arquivo de texto e conte o número de linhas e palavras.",
-             "Crie uma função em TypeScript que valide emails e números de telefone utilizando expressões regulares (regex).",
-             "Mostre como configurar a conexão com um banco de dados usando Sequelize em JavaScript.",
-             "Crie um código em Python que leia um arquivo CSV e envie os dados para uma API via requisição HTTP.",
-             "Crie um middleware de autenticação JWT completo em Node.js (gerar token, verificar e renovar).",
-             "Crie uma API REST em Node.js com Express que permita cadastrar, listar e deletar produtos, utilizando Sequelize e MySQL."
-             ]
 
 if openai_api_key is None:
     raise ValueError(
@@ -37,18 +32,15 @@ headers = {
 }
 
 
-for i in range(len(questions)):
+for i in range(6):
+    question = open_txt(f"../../prompts/code_generation/prompt{i+1}")
     start_time = time.time()
     data = {
         "model": "gpt-4.1-mini",
         "messages": [
             {
-                "role": "system",
-                "content": "You are a helpful assistant."
-            },
-            {
                 "role": "user",
-                "content": questions[i]
+                "content": question
             }
         ]
     }
@@ -60,7 +52,7 @@ for i in range(len(questions)):
         content = response.json()['choices'][0]['message']['content']
         end_time = time.time()
         elapsed_time = end_time - start_time
-        save_txt("../responses/code_generation", f"response_chatgpt_{i+1}.txt", content + f"\n\nTime taken: {elapsed_time} seconds\nTokens used: {tokens_count}")
+        save_txt("../responses/code_generation", f"response_chatgpt_{i+1}.md", content + f"\n\nTime taken: {elapsed_time} seconds\nTokens used: {tokens_count}")
     else:
         print("Error:", response.status_code, response.text)
         
