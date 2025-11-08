@@ -52,7 +52,7 @@ for i in range(6):
         content = response.json()['choices'][0]['message']['content']
         end_time = time.time()
         elapsed_time = end_time - start_time
-        save_txt("../responses/error_analysis", f"response_chatgpt_{i+1}.txt", content + f"\n\nTime taken: {elapsed_time} seconds\nTokens used: {tokens_count}")
+        save_txt("../responses/error_analysis", f"response_chatgpt_{i+1}.md", content + f"\n\nTime taken: {elapsed_time} seconds\nTokens used: {tokens_count}")
     else:
         print("Error:", response.status_code, response.text)
         
