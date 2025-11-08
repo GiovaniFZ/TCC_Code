@@ -1,0 +1,1 @@
+Crie um código em python que leia um arquivo de texto e conte o número de linhas e palavras.

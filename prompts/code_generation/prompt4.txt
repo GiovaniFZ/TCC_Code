@@ -1,0 +1,1 @@
+Crie um código em Python que leia um arquivo CSV e envie os dados para uma API via requisição HTTP.

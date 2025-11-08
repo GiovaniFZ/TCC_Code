@@ -1,0 +1,1 @@
+Mostre como configurar a conexão com um banco de dados usando Sequelize em JavaScript.

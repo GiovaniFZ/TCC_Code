@@ -1,0 +1,1 @@
+Crie um middleware de autenticação JWT completo em Node.js (gerar token, verificar e renovar).

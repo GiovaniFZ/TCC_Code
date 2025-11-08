@@ -1,0 +1,1 @@
+Crie uma API REST em Node.js com Express que permita cadastrar, listar e deletar produtos, utilizando Sequelize e MySQL.
