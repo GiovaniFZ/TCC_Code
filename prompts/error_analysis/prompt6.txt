@@ -1,0 +1,10 @@
+Em Node.js, estou recebendo “ReferenceError: require is not defined” ao tentar importar módulos. O que pode estar errado?
+
+```js
+// index.js
+const express = require("express");
+const app = express();
+
+app.get("/", (req, res) => res.send("Olá!"));
+app.listen(3000);
+```

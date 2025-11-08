@@ -1,0 +1,7 @@
+Meu código em Python retorna “TypeError: 'int' object is not iterable”. O que pode estar errado?
+```python
+total = 0
+for num in 10:
+    total += num
+print(total)
+```

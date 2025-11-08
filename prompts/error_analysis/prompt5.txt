@@ -1,0 +1,12 @@
+Estou recebendo “TypeError: Cannot destructure property 'name' of 'req.body' as it is undefined” no Express. O que pode causar isso?
+```js
+import express from "express";
+const app = express();
+
+app.post("/create", (req, res) => {
+  const { name, price } = req.body;
+  return res.json({ name, price });
+});
+
+app.listen(3000, () => console.log("Server running on port 3000"));
+```
