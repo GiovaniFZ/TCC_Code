@@ -32,6 +32,6 @@ for i in range(len(questions)):
     end_time = time.time()
     elapsed_time = end_time - start_time
     response_full = response.text + f"\n\nTime taken: {elapsed_time} seconds\nTokens used: {token_count}"
-    save_txt("../responses/code_generation", f"response_gemini_{i+1}.txt", response_full)
+    save_txt("../responses/code_generation", f"response_gemini_{i+1}.md", response_full)
 
 print("All responses saved to text files.")
