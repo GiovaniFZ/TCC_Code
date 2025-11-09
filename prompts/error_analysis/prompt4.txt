@@ -3,7 +3,7 @@ Estou recebendo “UnhandledPromiseRejectionWarning” no Node.js ao usar axios.
 const axios = require("axios");
 
 async function fetchData() {
-  const res = await axios.get("https://api.invalida.com/dados");
+  const res = await axios.get("https://api.com/dados");
   console.log(res.data);
 }
 
