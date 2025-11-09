@@ -1,17 +1,18 @@
-O aviso **`UnhandledPromiseRejectionWarning`** ocorre porque a promessa retornada por `axios.get` está sendo rejeitada (provavelmente pela URL inválida), e essa rejeição não está sendo tratada. Ou seja, o erro gerado pela requisição não está sendo capturado, o que resulta nesse aviso.
+O aviso **UnhandledPromiseRejectionWarning** acontece porque a Promise retornada pela função assíncrona `fetchData` pode rejeitar (por exemplo, se a requisição falhar), mas você não está tratando esse erro com um bloco `try/catch` ou um método `.catch()`.
 
-Para corrigir, você deve tratar o erro usando `try/catch` dentro da função async **ou** usar `.catch()` na promessa.
+No seu código, a função `fetchData()` pode gerar um erro que não está sendo capturado, gerando esse aviso.
 
-### Como corrigir:
+---
 
-#### Opção 1: Usar try/catch dentro da função async
+### Como corrigir
 
+1. **Usando try/catch dentro da função `fetchData`:**
 ```js
 const axios = require("axios");
 
 async function fetchData() {
   try {
-    const res = await axios.get("https://api.invalida.com/dados");
+    const res = await axios.get("https://api.com/dados");
     console.log(res.data);
   } catch (error) {
     console.error("Erro ao buscar dados:", error.message);
@@ -21,16 +22,8 @@ async function fetchData() {
 fetchData();
 ```
 
-#### Opção 2: Usar `.catch()` no retorno da promessa
-
+2. **Ou tratando a Promise no momento de chamar a função:**
 ```js
-const axios = require("axios");
-
-async function fetchData() {
-  const res = await axios.get("https://api.invalida.com/dados");
-  console.log(res.data);
-}
-
 fetchData().catch(error => {
   console.error("Erro ao buscar dados:", error.message);
 });
@@ -40,18 +33,13 @@ fetchData().catch(error => {
 
 ### Explicação
 
-- Quando você usa `await`, se a promessa for rejeitada (ex: erro 404, erro de rede), essa rejeição se transforma numa exceção, que precisa ser capturada (com `try/catch`).
-- Se não capturar, o Node.js avisa que há uma promessa rejeitada não tratada, o que pode causar comportamentos inesperados e deve ser evitado.
+- Quando uma Promise rejeita e você não trata esse erro, o Node.js emite o `UnhandledPromiseRejectionWarning`.
+- Sempre trate erros em funções async (com try/catch) ou diretamente nas Promises (com `.catch()`).
+- Isso evita que o processo do Node seja encerrado inesperadamente e ajuda no debug das aplicações.
 
 ---
 
-### Dica extra
+Se quiser garantir que seu código trate erros async de forma elegante, sempre mantenha blocos `try/catch` para chamadas await, especialmente ao usar axios ou outras operações que dependem de IO e podem falhar.
 
-Além disso, verifique se a URL está correta, porque "https://api.invalida.com/dados" provavelmente é inválida e causará o erro.
-
----
-
-Se precisar, posso ajudar a criar um exemplo completo com tratamento de erro!
-
-Time taken: 7.659911632537842 seconds
-Tokens used: 480
+Time taken: 4.62438702583313 seconds
+Tokens used: 407
