@@ -9,4 +9,3 @@ Nosso TCC possui por objetivo comparar diferentes modelos de LLMs (Modelos de li
 
 - `prompts/`: prompts de entrada usados para a avaliação, organizados por categoria.
 - `requirements.txt`: lista de dependências do projeto (use `pip install -r requirements.txt`).
-- `README.md`: este arquivo — visão geral e instruções do projeto.
