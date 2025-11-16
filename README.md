@@ -30,26 +30,6 @@ Avaliação técnica (correção lógica e sintática)
 
 Avaliação comparativa (vantagens e limitações lado a lado)
 
-## 📁 Estrutura Completa do Projeto
-.
-├── codes/                     # Scripts principais da análise
-│   ├── code_comprehension.py
-│   ├── code_generation.py
-│   └── error_analysis.py
-│
-├── prompts/                   # Conjunto de prompts usados nos testes
-│   ├── code_comprehension/
-│   ├── code_generation/
-│   └── error_analysis/
-│
-├── responses/
-│   ├── chatgpt/               # Respostas do ChatGPT organizadas
-│   └── gemini/                # Respostas do Gemini organizadas
-│
-├── .gitignore
-├── README.md
-└── requirements.txt
-
 ## Categorias de Análise
 ### 1. Compreensão de Código
 
@@ -133,6 +113,7 @@ O prompt avaliado
 A resposta completa
 
 Marcação por categoria e modelo
+
 
 
 
