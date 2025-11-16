@@ -1,6 +1,6 @@
-🔍 Projeto de Análise Comparativa entre Modelos de Inteligência Artificial
-Avaliação entre ChatGPT e Gemini aplicados à engenharia de software
-🧭 
+::: {align="center"}
+Trabalho de Conclusão de Curso (TCC) sobre Análise Comparativa entre Modelos de Inteligência Artificial
+Avaliação entre ChatGPT e Gemini aplicados à engenharia de software 
 
 ## 1. Introdução
 O objetivo deste projeto — parte integrante do Trabalho de Conclusão de Curso — é comparar o desempenho de diferentes LLMs (Large Language Models) em tarefas envolvendo código-fonte de linguagens amplamente utilizadas na engenharia de software.
@@ -136,4 +136,5 @@ O prompt avaliado
 A resposta completa
 
 Marcação por categoria e modelo
+
 
