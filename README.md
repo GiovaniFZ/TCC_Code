@@ -14,13 +14,11 @@ Análise e correção de erros
 
 Cada eixo possui 6 prompts específicos, enviados aos modelos ChatGPT e Gemini, permitindo uma comparação estruturada de suas capacidades, limitações, consistência e precisão técnica.
 
-::: {align="center"}
 
 🤖 ChatGPT vs Gemini
 Um estudo comparativo baseado em qualidade, precisão e utilidade prática
 
 🚀 Compreensão • Geração • Depuração de Código
-:::
 
 ## Sobre o Projeto
 
@@ -135,6 +133,7 @@ O prompt avaliado
 A resposta completa
 
 Marcação por categoria e modelo
+
 
 
 
