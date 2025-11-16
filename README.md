@@ -1,7 +1,8 @@
 🔍 Projeto de Análise Comparativa entre Modelos de Inteligência Artificial
 Avaliação entre ChatGPT e Gemini aplicados à engenharia de software
-🧭 1. Introdução
+🧭 
 
+## 1. Introdução
 O objetivo deste projeto — parte integrante do Trabalho de Conclusão de Curso — é comparar o desempenho de diferentes LLMs (Large Language Models) em tarefas envolvendo código-fonte de linguagens amplamente utilizadas na engenharia de software.
 
 A análise contempla três eixos fundamentais:
@@ -22,7 +23,7 @@ Um estudo comparativo baseado em qualidade, precisão e utilidade prática
 🚀 Compreensão • Geração • Depuração de Código
 :::
 
-📘 Sobre o Projeto
+## Sobre o Projeto
 
 Este projeto automatiza a execução de prompts para ambos os modelos e captura suas respostas em formato Markdown, permitindo:
 
@@ -52,8 +53,8 @@ Avaliação comparativa (vantagens e limitações lado a lado)
 ├── README.md
 └── requirements.txt
 
-🧠 Categorias de Análise
-🔹 1. Compreensão de Código
+## Categorias de Análise
+### 1. Compreensão de Código
 
 Avalia a capacidade do modelo de:
 
@@ -65,9 +66,9 @@ Identificar estruturas importantes
 
 Interpretar a intenção do programador
 
-📌 Inclui 6 prompts exclusivos
+Inclui 6 prompts exclusivos
 
-🔹 2. Geração de Código
+### 2. Geração de Código
 
 Avalia a habilidade de:
 
@@ -79,9 +80,9 @@ Seguir requisitos detalhados
 
 Gerar código limpo, eficiente e funcional
 
-📌 Inclui 6 prompts exclusivos
+Inclui 6 prompts exclusivos
 
-🔹 3. Análise e Correção de Erros
+### 3. Análise e Correção de Erros
 
 O modelo deve:
 
@@ -93,13 +94,13 @@ Propor correções adequadas
 
 Sugerir melhorias estruturais
 
-📌 Inclui 6 prompts exclusivos
+Inclui 6 prompts exclusivos
 
-▶️ Como Executar as Análises
-🛠️ 1. Instalar dependências
+### Como Executar as Análises
+1. Instalar dependências
 pip install -r requirements.txt
 
-▶️ 2. Executar as categorias
+2. Executar as categorias
 # Compreensão de código
 python codes/code_comprehension.py
 
@@ -109,14 +110,14 @@ python codes/code_generation.py
 # Análise de erros
 python codes/error_analysis.py
 
-🤖 Modelos Suportados
+## Modelos Suportados
 Modelo	Diretório das Respostas
 ChatGPT	responses/chatgpt/
 Gemini	responses/gemini/
 
 As respostas são armazenadas automaticamente em Markdown para facilitar leitura e análise comparativa.
 
-📝 Padrão dos Arquivos de Resposta
+Padrão dos Arquivos de Resposta
 
 Todos os arquivos seguem a convenção:
 
@@ -135,3 +136,4 @@ O prompt avaliado
 A resposta completa
 
 Marcação por categoria e modelo
+
