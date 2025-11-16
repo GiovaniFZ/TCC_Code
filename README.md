@@ -1,5 +1,4 @@
-::: {align="center"}
-Trabalho de Conclusão de Curso (TCC) sobre Análise Comparativa entre Modelos de Inteligência Artificial
+# Trabalho de Conclusão de Curso (TCC) sobre Análise Comparativa entre Modelos de Inteligência Artificial
 Avaliação entre ChatGPT e Gemini aplicados à engenharia de software 
 
 ## 1. Introdução
@@ -136,5 +135,6 @@ O prompt avaliado
 A resposta completa
 
 Marcação por categoria e modelo
+
 
 
