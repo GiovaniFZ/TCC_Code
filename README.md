@@ -30,21 +30,21 @@ Avaliação técnica (correção lógica e sintática)
 
 Avaliação comparativa (vantagens e limitações lado a lado)
 
-📁 Estrutura Completa do Projeto
+## 📁 Estrutura Completa do Projeto
 .
-├── codes/                     # Scripts principais de execução
+├── codes/                     # Scripts principais da análise
 │   ├── code_comprehension.py
 │   ├── code_generation.py
 │   └── error_analysis.py
 │
-├── prompts/                   # Prompts divididos por categoria
+├── prompts/                   # Conjunto de prompts usados nos testes
 │   ├── code_comprehension/
 │   ├── code_generation/
 │   └── error_analysis/
 │
 ├── responses/
-│   ├── chatgpt/               # Respostas geradas pelo ChatGPT
-│   └── gemini/                # Respostas geradas pelo Gemini
+│   ├── chatgpt/               # Respostas do ChatGPT organizadas
+│   └── gemini/                # Respostas do Gemini organizadas
 │
 ├── .gitignore
 ├── README.md
@@ -133,6 +133,7 @@ O prompt avaliado
 A resposta completa
 
 Marcação por categoria e modelo
+
 
 
 
