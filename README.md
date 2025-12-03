@@ -86,8 +86,9 @@ TCC_Code/
 │   ├── code_generation/        # 6 prompts de geração
 │   └── error_analysis/         # 6 prompts de análise de erros
 │
-├── requirements.txt            # Dependências do projeto
-└── README.md                   # Este arquivo e documentação do estudo
+├── Avaliacao Feita.xlsx         # Consolidação dos resultados das avaliações
+├── README.md                   # Este arquivo e documentação do estudo
+└── requirements.txt            # Dependências do projeto
 ```
 
 ## Arquivo de Consolidação de Resultados: `Avaliacao Feita.xlsx`
