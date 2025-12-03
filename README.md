@@ -60,7 +60,6 @@ Avalia a capacidade de:
 ```
 TCC_Code/
 │
-├── Avaliacao Feita.xlsx         # Consolidação dos resultados das avaliações
 ├── chatgpt/                    # Scripts e respostas do ChatGPT
 │   ├── codes/                  # Scripts Python para gerar respostas
 │   │   ├── code_comprehension.py
